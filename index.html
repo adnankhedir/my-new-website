@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="Form login-form">
+            <h2>Login</h2>
+            <form action="login.php" method="POST">
+                <div class="input-box">
+                    <i class='bx bxs-user'></i>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter Your Username*" required>
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-envelope' ></i>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter Your Password*" required>
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-id-card' ></i>
+                    <label for="role">Role</label>
+                    <select id="role" name="role" required>
+                        <option value="manager">Manager</option>
+                        <option value="admin">Admin</option>
+                        <option value="user">User</option>
+                    </select>
+                </div>
+                <button class="btn">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
